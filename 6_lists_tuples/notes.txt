@@ -1,0 +1,106 @@
+Chapter 6 - Lists
+---
+
+- concatenate and replicate Lists
+- spam * 3 --> [1,2,3,1,2,3,1,2,3]
+- spam + spam --> [1,2,3] + [1,2,3] = [1,2,3,1,2,3]
+
+
+---
+IN & NOT IN
+---
+
+- in keyword checks if a value is "in" the list
+- 'howdy' in ['howdy', 'hi'] --> True
+
+---
+Destructuring / Tuple Unpacking
+---
+
+- size, height, color = ['fat', '80cm', 'blue']
+
+- you can destructure a list into associated variables
+
+
+---
+Enumerate
+---
+
+- enumerate() function will return the index and associated value
+
+- for index,value in Enumerate(spam)
+
+- destructuring the values returned?
+
+
+---
+Random Module
+---
+
+- random.choice() --> selects a random variable within the array
+
+- random.shuffle() --> shuffles the array
+
+---
+Short Circuiting
+---
+
+- short circuiting occurs when using 'and' operators
+
+- if the first value is FALSE --> the second statement is short circuited (ignored)
+
+if 1 < 2 and spam[0] == 'cat':
+
+- 1<2 = false therefore spam[0] == 'cat' is ignored
+--> spam[0] == 'cat' would have caused an error (since cat doesnt exist)
+
+- but BECAUSE OF SHORT Circuiting, we are GOOD! because python ignored the second conditional statement
+
+---
+Sequence Types
+---
+
+- list, string, range objects, tuples
+
+- these are all very similar
+- all have similar methods and functionality 
+- string[1:] --> returns the entire string except the first character
+
+---
+Tuples
+---
+
+- 2 main differences from list
+    - defined using () instead of []
+    - they are IMMUTABLE (cannot modify, append, or remove values)
+
+
+- used when you DO NOT WANT the order of values to change
+- slightly faster than lists because of optimizations
+
+---
+References
+---
+
+- lists and tuples are usually PASSED BY References
+
+--> you are passing a REFERENCE to the list in memory
+
+--> you aren't creating a clone, you are actively modifying the OG list in memory
+
+spam = [1,2]
+eggs = spam
+
+- eggs is a REFERENCE to [1,2] in memory
+- the same value as spam (they are the same address value)
+
+
+---
+COPY & DEEPCOPY()
+---
+
+- copy() --> creates a copy() of a value instead of just a References
+
+- deepcopy() --> will copy lists inside of a list
+
+--> lists contain references to other values too    

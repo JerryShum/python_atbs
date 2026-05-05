@@ -1,0 +1,20 @@
+Methods
+---
+
+- Methods are functions that you call ON a value
+- array.index() --> this is a method that returns the index of a specific value
+
+
+index() --> finds the index of a value
+append() --> adds a new value to the END of the list
+insert() --> adds a new value at a specific index
+
+- modify the list IN PLACE --> meaning they DO NOT return any values
+    - they modify the existing variable / value
+
+remove() --> removes a value from a list
+
+
+sort() --> sorts a list
+
+reverse() --> reverses a list
