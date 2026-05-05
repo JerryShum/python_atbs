@@ -1,0 +1,48 @@
+Chapter 5 - Debugging
+---
+
+Raising Exceptions
+---
+
+- we can use the try / except method to gracefully handle any faults / errors in our program
+
+- use the raise Exception() line to raise a custom except that we can handle
+
+- except Exception as err --> this is how we can handle a wide variety of exceptions
+
+---
+Assertions
+---
+
+- Assertions can be used to verify the obvious behaviour of code and functionality
+
+- assert 1 < 2 (true) 
+
+- if the assertion is false, that means there is an errors
+
+- it will immediately stop and crash the program with an error.
+
+---
+Logging
+---
+
+- logging module can be used to cleanly print / display information (without using print statements)
+- use logging.basicConfig() to setup the log messages and the format
+- use logging.debug() to log messages at specific times
+
+
+Logging Files:
+- logging.basicConfig(filename='programLog.txt')
+
+- can be used to specify a location to send logs
+
+Logging Levels:
+- 5 categories of logging:
+    - debug --- logging.debug() --> lowest level (small details)
+    - info --- logging.info() --> general information
+    - WARNING --- logging.warning() --> potential problems (future issues)
+    - ERROR --- logging.error() --> used to indicate errors
+    - CRITICAL --- logging.critical() --> used to indicate FATAL errors
+
+- these can be used preemptively to log whether an error has occurred or not
+- you can put them in an except: block to log that an exception has occurred.
