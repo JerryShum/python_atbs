@@ -1,0 +1,12 @@
+Chapter 4: Functions
+
+- use def <functionName> to define a new function
+
+- used to avoid duplicate code
+
+- used for code that is expected to run multiple times
+
+- when modifying a 'global' variable within a function --> use the global keyword 
+    - this helps clarify that we are modifying a global variable
+
+- use try / except to (catch) any expected errors that may occur.
