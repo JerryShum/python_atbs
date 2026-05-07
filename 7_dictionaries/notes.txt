@@ -1,0 +1,17 @@
+Chapter 7 - Dictionaries
+---
+
+---
+Methods
+---
+
+- keys() 
+- values()
+- items()
+
+- each return a list like value of their respective value (keys, values, pairs )
+
+- get(key, fallback) --> retrieves a value from a dictionary using a key
+    - if the key doesn't exist, it takes and returns a fallback value 
+
+- setDefault(key, value) --> sets a default value for a specific key in the dictionary 
