@@ -19,13 +19,14 @@ def get_random_weather_data():
     }
 
 
-def main():
+def get_list_weather_data():
     weatherData = []
 
     for i in range(100):
         weatherData.append(get_random_weather_data())
 
     print(weatherData)
+    return weatherData
 
 
-main()
+get_list_weather_data()
