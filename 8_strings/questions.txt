@@ -1,0 +1,47 @@
+1. What are escape sequences?
+- \ characters are used when a character might interfere with a string literal
+- \n for new line
+- \" for quotation or \'
+- etc.
+
+2. What do \n and \t represent?
+- \n --> newline character (enter key)
+- \t --> tab character (tab key)
+
+3. How can you put a \ in a string?
+- you can use raw strings or you can escape it using \\
+
+4. The string value "Howl's Moving Castle" is a valid string. Why isn’t it a problem that the single quote character in the word Howl's isn’t escaped?
+
+- It's not a problem because the string is using double quotes. This means that the user can use single quotes within the string without any issue.
+
+5. If you don't want \n in your string. Whats another way to write a string with newlines?
+- You can use multi-line strings defined with """ at the start and end. This allows newlines.
+
+ 6.  What do the following expressions evaluate to?
+
+    'Hello, world!'[1] --> e
+    'Hello, world!'[0:5] --> Hello
+    'Hello, world!'[:5] --> Hello
+    'Hello, world!'[3:] --> lo, world!
+
+  7.  What do the following expressions evaluate to?
+
+    'Hello'.upper() --> HELLO
+    'Hello'.upper().isupper() --> True
+    'Hello'.upper().lower() --> hello
+
+  8.  What do the following expressions evaluate to?
+
+    'Remember, remember, the fifth of November.'.split() --> [Remember, remember, the, fifth...]
+    '-'.join('There can be only one.'.split()) --> "There-can-be-only-one."
+
+ 9.  What string methods can you use to right-justify, left-justify, and center a string?
+- rjust()
+- ljust()
+- center()
+
+10.  How can you trim whitespace characters from the beginning or end of a string?
+- strip() --> strips both ends
+- lstrip() --> white space at the start (removes)
+- rstrip() --> removes whitespace at the end.
